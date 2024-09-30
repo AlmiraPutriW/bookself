@@ -1,0 +1,161 @@
+
+h2{
+  text-align: center;
+  font-style: italic;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+}
+
+
+header {
+  background-color: #48729e;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+main {
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+
+form {
+  border: 2px solid #d1d1d1;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+
+button {
+  background-color: #5e8dbe;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:#0754a7;
+}
+
+section{
+  border: 2px solid #d1d1d1;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color:#48729e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#incompleteBookList, #completeBookList {
+  border: 2px solid #d1d1d1;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+button[data-testid="bookItemIsCompleteButton"] {
+  background-color: #28a745;
+}
+
+button[data-testid="bookItemDeleteButton"] {
+  background-color: #dc3545;
+}
+
+button[data-testid="bookItemEditButton"] {
+  background-color: #ffc107;
+}
+
+
+#editBookModal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+
+#editBookModal .modal-content {
+  background-color: #fefefe;
+  border: 2px solid #888;
+  border-radius: 8px;
+  margin: 5% auto;
+  padding: 20px;
+  width: 80%; 
+  max-width: 500px;
+}
+
+
+#editBookModal .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#editBookModal .close:hover,
+#editBookModal .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  #editBookModal .modal-content {
+    width: 95%;
+  }
+}
